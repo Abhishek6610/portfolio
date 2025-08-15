@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abhishek Jha — Portfolio</title>
+  <meta name="description" content="Abhishek Jha — Backend-focused MERN developer & FinTech enthusiast." />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <a class="logo" href="#hero">Abhishek</a>
+    <nav class="nav__links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact" class="btn btn--sm">Contact</a>
+    </nav>
+    <button class="menu" aria-label="Menu" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero"><!-- Neon floating particles -->
+<div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+<div class="particle" style="left: 25%; animation-delay: 2s;"></div>
+<div class="particle" style="left: 40%; animation-delay: 4s;"></div>
+<div class="particle" style="left: 60%; animation-delay: 1s;"></div>
+<div class="particle" style="left: 75%; animation-delay: 3s;"></div>
+<div class="particle" style="left: 90%; animation-delay: 5s;"></div>
+
+      <div class="hero__text" data-aos="fade-right">
+        <h1>Abhishek Jha</h1>
+        <p class="tagline"><span id="typed"></span></p>
+        <p class="sub">
+          I build scalable, cloud-native backends and secure MERN apps. Interested in digital trading,
+          exchange connectivity & real-time financial data platforms.
+        </p>
+        <div class="cta">
+          <a class="btn" href="assets/Abhishek_Jha_Resume.pdf" download>⬇ Download Resume</a>
+          <a class="btn btn--ghost" href="#projects">See Projects</a>
+        </div>
+      </div>
+      <div class="hero__photo" data-aos="fade-left">
+        <!-- CHANGE AVATAR IMAGE HERE -->
+        <img src=" " alt="Abhishek avatar">
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section" data-aos="fade-up">
+      <h2><span>About</span></h2>
+      <p>
+        Motivated Computer Engineering student with hands-on experience building microservices and
+        cloud-native backends using <strong>AWS</strong>, <strong>Docker</strong>, and <strong>Node.js</strong>.
+        Strong grasp of distributed systems, financial APIs, and real-time processing. Passionate about
+        applying backend engineering to fintech ecosystems — digital trading, exchange connectivity,
+        and financial data platforms.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section" data-aos="fade-up">
+      <h2><span>Skills</span></h2>
+      <div class="skills">
+        <div class="skill" data-aos="zoom-in"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+        <div class="skill" data-aos="zoom-in" data-aos-delay="50"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+        <div class="skill" data-aos="zoom-in" data-aos-delay="100"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+        <div class="skill" data-aos="zoom-in" data-aos-delay="150"><i class="devicon-express-original"></i><span>Express</span></div>
+        <div class="skill" data-aos="zoom-in" data-aos-delay="200"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+        <div class="skill" data-aos="zoom-in" data-aos-delay="250"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+        <div class="skill" data-aos="zoom-in" data-aos-delay="300"><i class="devicon-redis-plain colored"></i><span>Redis</span></div>
+        <div class="skill" data-aos="zoom-in" data-aos-delay="350"><i class="devicon-react-original colored"></i><span>React (basic)</span></div>
+        <div class="skill" data-aos="zoom-in" data-aos-delay="400"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
+        <div class="skill" data-aos="zoom-in" data-aos-delay="450"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
+        <div class="skill" data-aos="zoom-in" data-aos-delay="500"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+        <div class="skill" data-aos="zoom-in" data-aos-delay="550"><i class="devicon-amazonwebservices-original colored"></i><span>AWS</span></div>
+        <div class="skill" data-aos="zoom-in" data-aos-delay="600"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+        <div class="skill" data-aos="zoom-in" data-aos-delay="650"><i class="devicon-git-plain colored"></i><span>Git & GitHub</span></div>
+      </div>
+      <ul class="key-concepts">
+        <li>OOP</li><li>DSA</li><li>OS</li><li>DBMS</li><li>System Design</li><li>Networking</li>
+        <li>FinTech • APIs • Feeds • Real-Time Systems</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section" data-aos="fade-up">
+      <h2><span>Projects</span></h2>
+
+      <article class="project">
+        <div class="project__img"><img src="assets/p1.png" alt="Car Rental Website"></div>
+        <div class="project__body">
+          <h3>Car Rental Website (MERN)</h3>
+          <p>React UI, MongoDB, Node/Express. Email.js & Nodemailer for comms. Razorpay integration.</p>
+          <div class="stack"><span>MERN</span><span>Email.js</span><span>Nodemailer</span><span>Razorpay</span></div>
+          <div class="links">
+            <!-- CHANGE LINKS BELOW -->
+            <a class="btn btn--sm btn--ghost" href="#" target="_blank">Code</a>
+            <a class="btn btn--sm" href="#" target="_blank">Live</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__img"><img src="assets/p2.png" alt="Turf Booking Website"></div>
+        <div class="project__body">
+          <h3>Turf Booking Website (MERN)</h3>
+          <p>BCRYPT encryption, React frontend, MongoDB backend.</p>
+          <div class="stack"><span>React</span><span>Node</span><span>MongoDB</span><span>BCRYPT</span></div>
+          <div class="links">
+            <a class="btn btn--sm btn--ghost" href="#" target="_blank">Code</a>
+            <a class="btn btn--sm" href="#" target="_blank">Live</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__img"><img src="assets/p3.png" alt="Network Security Project"></div>
+        <div class="project__body">
+          <h3>Network Security Project</h3>
+          <p>MERN app + Streamlit for monitoring network traffic.</p>
+          <div class="stack"><span>MERN</span><span>Streamlit</span></div>
+          <div class="links">
+            <a class="btn btn--sm btn--ghost" href="#" target="_blank">Code</a>
+            <a class="btn btn--sm" href="#" target="_blank">Live</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__img"><img src="assets/p4.png" alt="Web Scraping Tool"></div>
+        <div class="project__body">
+          <h3>Web Scraping Tool</h3>
+          <p>Node + Express, Axios & Cheerio, CSV storage.</p>
+          <div class="stack"><span>Node</span><span>Express</span><span>Axios</span><span>Cheerio</span></div>
+          <div class="links">
+            <a class="btn btn--sm btn--ghost" href="#" target="_blank">Code</a>
+            <a class="btn btn--sm" href="#" target="_blank">Live</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- EXPERIENCE & CERTIFICATIONS -->
+    <section id="experience" class="section" data-aos="fade-up">
+      <h2><span>Experience</span></h2>
+      <ul class="timeline">
+        <li>
+          <h4>Technical Projects — Independent & Team (2–3 devs)</h4>
+          <p>Cloud-native patterns, containerized deployment, testing, documentation, CI/CD workflows.</p>
+        </li>
+        <li>
+          <h4>Tutor — Physics Wallah (1 year)</h4>
+          <p>Tutored students; learned to break down complex concepts and communicate clearly.</p>
+        </li>
+      </ul>
+
+      <h2 class="mt"><span>Certifications</span></h2>
+      <ul class="bullets">
+        <li>AWS Cloud Foundation and Architecture</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" data-aos="fade-up">
+      <h2><span>Contact</span></h2>
+      <p>Open to internships, freelance, and collaborations.</p>
+      <div class="contact__grid">
+        <a class="contact__card" href="mailto:jhaabhishek591@gmail.com">📧 jhaabhishek591@gmail.com</a>
+        <a class="contact__card" href="tel:+919365973487">📞 +91 93659 73487</a>
+        <a class="contact__card" href="https://github.com/Abhishek6610" target="_blank">🧑‍💻 GitHub</a>
+        <a class="contact__card" href="https://leetcode.com/u/jhaabhishek591/" target="_blank">🧩 LeetCode</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Abhishek Jha • Built with care.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="script.js"></script>
+</body>
+</html>
